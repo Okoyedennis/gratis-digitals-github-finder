@@ -3,12 +3,115 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+nav{
+  height: 80px;
+  background-color: #0d6efd;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1{
+  color: #fff;
+}
+
 .container{
   width: 80%;
   margin: auto;
 }
 
+.logo img{
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 .app{
   display: flex;
-  margin-top: 1rem;
+  margin: 2rem 0;
+  align-items: center;
+  gap: 5rem;
 }
+
+.app__content .description{
+  margin: 1rem 0;
+
+}
+
+.app__content-bottom{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+
+.stars, .issue{
+  /* border: 1px solid black; */
+  padding: .3rem 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.stars{
+  background-color: #ffc107;
+
+}
+
+.issue{
+  background-color: #0d6efd;
+}
+
+hr {
+    height: 1px;
+    background: #ced4da;
+    font-size: 0;
+    border: 0;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #6c757d;
+}
+
+footer .active{
+  color: #000;
+}
+
+.spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px){
+  .container{
+  width: 90%;
+  margin: auto;
+}
+  .app{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .app__content-bottom{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
